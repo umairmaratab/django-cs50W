@@ -1,0 +1,15 @@
+{% comment %} {% load static %} {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tasks</title>
+        {% comment %} <link href="{% static 'newyear/styles.css' %}" rel="stylesheet"> {% endcomment %}
+    </head>
+    <body>
+        <ul>
+            {% for task in tasks %}
+                <li> {{ task }} </li>
+            {% endfor %}
+        </ul>
+    </body> 
+</html>
